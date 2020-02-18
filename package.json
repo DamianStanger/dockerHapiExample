@@ -1,0 +1,19 @@
+{
+  "name": "hapiapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "lab -v **/*.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/lab": "^22.0.3"
+  },
+  "devDependencies": {
+    "@hapi/code": "^8.0.1",
+    "@hapi/hapi": "^19.1.1"
+  }
+}
