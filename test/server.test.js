@@ -24,7 +24,7 @@ describe('GET /', () => {
     expect(res.statusCode).to.equal(200);
   });
 
-  it('should fail with 1 != 2', async () => {
-    expect(1).to.equal(2);
+  it('should pass with 1 == 1', () => {
+    expect(1).to.equal(1);
   });
 });
