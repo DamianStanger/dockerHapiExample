@@ -7,3 +7,15 @@ before_install:
 
 script:
   - docker run damianstanger/dockerhapiexample npm run test
+
+deploy:
+  provider: elsticbeanstalk
+  region: "eu-west-2"
+  app: "dockerhapiexample"
+  env: "Dockerhapiexample-env"
+  bucket_name: "elasticbeanstalk-eu-west-2-782574302920"
+  bucket_path: "dockerhapiexample"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
